@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Store</title>
+  <style>
+    /* CSS styling */
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar .logo img {
+      height: 30px;
+    }
+
+    .navbar nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar .search input {
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+    }
+
+    .navbar .cart-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Main content */
+    .main-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem;
+      background-color: #f8f8f8;
+    }
+
+    .main-content .image-container img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 15px;
+    }
+
+    .main-content .text-container {
+      text-align: center;
+    }
+
+    .main-content .text-container h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .main-content .text-container p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    /* Shoe Gallery */
+    .shoe-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+
+    .shoe-gallery .shoe-item {
+      text-align: center;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .shoe-gallery .shoe-item img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    .shoe-gallery .shoe-item p {
+      margin-top: 0.5rem;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo">
+    </div>
+    <nav>
+      <a href="#">New & Featured</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Sale</a>
+      <a href="#">SNKRS</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="cart-icon">🛒</div>
+  </header>
+
+  <!-- Main content -->
+  <section class="main-content">
+    <div class="image-container">
+      <img src="./shoe1.jpg" alt="Nike Shoe">
+    </div>
+    <div class="text-container">
+        <img src="./s1.jpg">
+            <h1>New Styles on Sale</h1>
+      <p>Up to 40% Off</p>
+      <button onclick="showSaleAlert()">Shop All Our New Markdowns</button>
+    </div>
+  </section>
+
+  <!-- Shoe Gallery -->
+  <section class="shoe-gallery">
+    <div class="shoe-item">
+      <img src="https://images.nike.com/is/image/DotCom/CI9921_001?$SNKRS_COVER_WD$" alt="Shoe 1">
+      <p>Air jordan</p>
+    </div>
+    <div class="shoe-item">
+      <img src="https://images.nike.com/is/image/DotCom/AO2924_016?$SNKRS_COVER_WD$" alt="Shoe 2">
+      <p>Lice up in nike cortex</p>
+    </div>
+    <div class="shoe-item">
+      <img src="https://images.nike.com/is/image/DotCom/AT6174_001?$SNKRS_COVER_WD$" alt="Shoe 3">
+      <p>Air max Dn</p>
+    </div>
+    <div class="shoe-item">
+      <img src="https://images.nike.com/is/image/DotCom/CI0919_101?$SNKRS_COVER_WD$" alt="Shoe 4">
+      <p>Nike free mecton 6</p>
+    </div>
+    <div class="shoe-item">
+      <img src="./s3.jpg" alt="Shoe 5">
+      <p>Nike sneakers</p>
+    </div>
+    <div class="shoe-item">
+      <img src="./s4.jpg" alt="Shoe 6">
+      <p>Nike Tech Hera</p>
+    </div>
+    <div class="shoe-item">
+      <img src="./shoe1.jpg" alt="Shoe 7">
+      <p>Nike new jordhans</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Nike, Inc. All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showSaleAlert() {
+      alert("Shop All New Markdowns!");
+    }
+  </script>
+
+</body>
+</html>
